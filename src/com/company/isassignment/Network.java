@@ -102,6 +102,16 @@ public class Network {
         }
     }
 
+    public void printValue(){
+        System.out.println("Printing Results");
+        for(int i = 0; i < 12; i++){
+            System.out.print(i + " gave         " + this.getOutputs()[i].getValue() + " -- ");
+            System.out.print(outputLayer[i].getDesiredOutput() + " -- ");
+
+            System.out.println(outputLayer[i].getInputs()[0].getWeight());
+        }
+    }
+
     public Neuron[] getOutputs(){
         return this.outputLayer;
     }

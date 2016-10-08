@@ -1,5 +1,7 @@
 package com.company.isassignment;
 
+import java.util.Random;
+
 /**
  * Created by matthewmartin on 19/09/2016.
  * Class to define link between Neurtons
@@ -10,11 +12,12 @@ public class Synapse {
     private Neuron input;
     private Neuron output;
 
-    public void Synapse(){
-        this.weight = 1;
+    public Synapse(){
+        Random rand = new Random();
+        this.weight = rand.nextDouble() - .5;
     }
 
-    public void Synapse(double weight, Neuron input, Neuron output){
+    public Synapse(double weight, Neuron input, Neuron output){
         this.weight = weight;
         this.input = input;
         this.output = output;
@@ -53,23 +56,23 @@ public class Synapse {
     }
 
     public double getSig(){
-        if(this.getOutput().getOutputs().length == 0){
+        if(this.output.getOutputs().length == 0){
             //the node is an output node
-            return this.getOutput().getValue() * (1- this.getOutput().getValue()) * (this.output.getDesiredOutput() - this.getOutput().getValue());
+            return this.output.getValue() * (1 - this.output.getValue()) * (this.output.getDesiredOutput() - this.output.getValue());
         }else{
             //establishing the summed value
-            double summedValue = 0;
+            double summedValue = 0.0;
 
             for(int i = 0; i < output.getOutputs().length; i++){
                 summedValue += output.getOutputs()[i].getValue() * output.getOutputs()[i].getSig();
             }
 
             //the node is a hidden node
-            return this.getOutput().getValue() * (1- this.getOutput().getValue()) * summedValue;
+            return this.getOutput().getValue() * (1 - this.getOutput().getValue()) * summedValue;
         }
     }
 
     public void backProp(double lr){
-        this.weight = weight + (lr * this.getSig() * this.output.getValue());
+        this.weight += lr * this.getSig() * this.output.getValue();
     }
 }
