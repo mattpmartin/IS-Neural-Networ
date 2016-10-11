@@ -3,12 +3,13 @@ package com.company.isassignment;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         //creating the blank network
-        Network network = new Network(144, 100, 12, .01);
+        Network network = new Network(144, 200, 12, .01);
 
         int trainNo = 0;
 
@@ -16,7 +17,7 @@ public class Main {
 
         System.out.println("Training Network");
 
-        while((network.errorValue() > 0.03 || network.errorValue() == 0.0)){// && trainNo < 2000) {
+        while((network.errorValue() > 0.01 || network.errorValue() == 0.0)){
             //increment train count
             trainNo++;
 
@@ -178,5 +179,47 @@ public class Main {
                 System.out.print(e);
             }
         }
+
+        System.out.println("Want to specify your own file (y/n)");
+
+        Scanner scan = new Scanner(System.in);
+
+        if(scan.next().equals("y")){
+            System.out.println("Type your file path here: ");
+
+            String inputFile = scan.next();
+
+            try {
+
+                double[] inputValues = new double[144];
+                BufferedReader br = new BufferedReader(new FileReader(inputFile));
+                String line;
+                String bigLine = "";
+
+                while ((line = br.readLine()) != null) {
+                    bigLine = bigLine + line;
+                }
+
+                for (int x = 0; x < 144; x++) {
+                    double value = 0.0;
+
+                    if (bigLine.charAt(x) == '*') value = 1.0;
+
+                    inputValues[x] = value;
+                }
+
+                //import those values into the network
+                network.importValues(inputValues);
+
+                //forward prop the file
+                network.forwardProp();
+
+                network.returnResult();
+            } catch (IOException e) {
+                System.out.print(e);
+            }
+        }
+
+        System.out.println("Done");
     }
 }
