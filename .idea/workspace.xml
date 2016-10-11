@@ -1,38 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="263afec4-e4d3-44f8-b120-575adc88a14e" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Clock.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Cross.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Exclamation.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Face.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Giveway.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/House.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Info.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Smile.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Stand.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Stop.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Tick.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles10/Walk.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Clock.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Cross.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Exclamation.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Face.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Giveway.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/House.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Info.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Smile.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Stand.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Stop.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Tick.noise.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Patterns/TestFiles5/Walk.noise.txt" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IS Assignment 2 v 2/com/company/isassignment/Main.class" afterPath="$PROJECT_DIR$/out/production/IS Assignment 2 v 2/com/company/isassignment/Main.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IS Assignment 2 v 2/com/company/isassignment/Network.class" afterPath="$PROJECT_DIR$/out/production/IS Assignment 2 v 2/com/company/isassignment/Network.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/IS Assignment 2 v 2/com/company/isassignment/Synapse.class" afterPath="$PROJECT_DIR$/out/production/IS Assignment 2 v 2/com/company/isassignment/Synapse.class" />
+    <list default="true" id="263afec4-e4d3-44f8-b120-575adc88a14e" name="Default" comment="added the patten files">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/10.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/11.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles10/9.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/0.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/1.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/10.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/11.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/2.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/3.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/4.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/5.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/6.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/7.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/8.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Patterns/TestFiles5/9.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/isassignment/Main.java" afterPath="$PROJECT_DIR$/src/com/company/isassignment/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/isassignment/Network.java" afterPath="$PROJECT_DIR$/src/com/company/isassignment/Network.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/company/isassignment/Synapse.java" afterPath="$PROJECT_DIR$/src/com/company/isassignment/Synapse.java" />
     </list>
     <ignored path="IS Assignment 2 v 2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -193,6 +187,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="isassignment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IS Assignment 2 v 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IS Assignment 2 v 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IS Assignment 2 v 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="IS Assignment 2 v 2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Patterns" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PatternFiles" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -649,7 +675,7 @@
       <workItem from="1475824229866" duration="1251000" />
       <workItem from="1475966036278" duration="160000" />
       <workItem from="1476068439233" duration="2156000" />
-      <workItem from="1476086813177" duration="3901000" />
+      <workItem from="1476086813177" duration="4018000" />
     </task>
     <task id="LOCAL-00001" summary="I dont know what ive done">
       <created>1475966548689</created>
@@ -658,11 +684,18 @@
       <option name="project" value="LOCAL" />
       <updated>1475966548689</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Holly shit i think it might actually be working, i give up on life now">
+      <created>1476147046294</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1476147046294</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17761000" />
+    <option name="totallyTimeSpent" value="17878000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -675,12 +708,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58382183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.58382183" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -708,7 +741,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I dont know what ive done" />
-    <option name="LAST_COMMIT_MESSAGE" value="I dont know what ive done" />
+    <MESSAGE value="Holly shit i think it might actually be working, i give up on life now" />
+    <option name="LAST_COMMIT_MESSAGE" value="Holly shit i think it might actually be working, i give up on life now" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
