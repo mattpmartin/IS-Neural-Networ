@@ -8,6 +8,7 @@ import java.util.Random;
  */
 public class Synapse {
     private double weight = 1;
+    private double originalValue;
     private double value;
     private Neuron input;
     private Neuron output;
@@ -49,6 +50,7 @@ public class Synapse {
 
     public void setValue(double value){
         this.value = value * this.weight;
+        this.originalValue = value;
     }
 
     public double getValue(){
@@ -68,11 +70,16 @@ public class Synapse {
             }
 
             //the node is a hidden node
-            return this.getOutput().getValue() * (1 - this.getOutput().getValue()) * summedValue;
+            return this.getOutput().getValue() * (1.0 - this.getOutput().getValue()) * summedValue;
         }
     }
 
     public void backProp(double lr){
-        this.weight += lr * this.getSig() * this.output.getValue();
+        if(this.input == null)
+            //if between input and hidden value use inputted value
+            this.weight = this.weight + lr * this.getSig() * this.originalValue;
+        else
+            //else use value if hidden layer input node
+            this.weight = this.weight + lr * this.getSig() * this.input.getValue();
     }
 }

@@ -60,7 +60,7 @@ public class Network {
         this.lr = lr;
     }
 
-    public void importValues(int[] inputValues, int[] outputValues){
+    public void importValues(double[] inputValues, double[] outputValues){
         //set values for input synapses
         for(int i = 0; i < inputValues.length; i++){
             for(int x = 0; x < hiddenLayer.length; x++){
@@ -71,6 +71,15 @@ public class Network {
         //set output desired values
         for(int i = 0; i < outputLayer.length; i++){
             outputLayer[i].setDesiredOutput(outputValues[i]);
+        }
+    }
+
+    public void importValues(double[] inputValues){
+        //set values for input synapses
+        for(int i = 0; i < inputValues.length; i++){
+            for(int x = 0; x < hiddenLayer.length; x++){
+                this.inputSynapses[x][i].setValue(inputValues[i]);
+            }
         }
     }
 
@@ -104,15 +113,39 @@ public class Network {
 
     public void printValue(){
         System.out.println("Printing Results");
-        for(int i = 0; i < 12; i++){
-            System.out.print(i + " gave         " + this.getOutputs()[i].getValue() + " -- ");
-            System.out.print(outputLayer[i].getDesiredOutput() + " -- ");
+        for(int i = 0; i < this.getOutputs().length; i++){
+            System.out.println(i + " gave         " + this.getOutputs()[i].getValue() + " -- ");
+//            System.out.print(outputLayer[i].getDesiredOutput() + " -- ");
+//
+//            for(int x = 0; x < outputLayer[i].getInputs().length; x++){
+//                System.out.print((lr * outputLayer[i].getInputs()[x].getSig() * Math.abs(outputLayer[i].getInputs()[x].getValue()) )+ " -- ");
+//            }
+//
+//            System.out.println(outputLayer[i].getInputs().length);
+        }
+    }
 
-            System.out.println(outputLayer[i].getInputs()[0].getWeight());
+    public void returnResult(){
+        for(int i = 0; i < this.outputLayer.length; i++){
+            if(this.outputLayer[i].getValue() > 0.5){
+                System.out.println("There is a " + this.outputLayer[i].getValue() + " change input is image " + i);
+            }
         }
     }
 
     public Neuron[] getOutputs(){
         return this.outputLayer;
+    }
+
+    public double errorValue(){
+        double summedValue = 0;
+
+        for(int i = 0; i < this.outputLayer.length; i++){
+            summedValue += Math.pow(this.outputLayer[i].getDesiredOutput() - this.outputLayer[i].getValue(), 2);
+        }
+
+        summedValue = summedValue / Math.pow(this.outputLayer.length, 2);
+
+        return Math.sqrt(summedValue);
     }
 }
