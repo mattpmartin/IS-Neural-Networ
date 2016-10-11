@@ -17,7 +17,7 @@ public class Main {
 
         System.out.println("Training Network");
 
-        while((network.errorValue() > 0.01 || network.errorValue() == 0.0)){
+        while((network.errorValue() > 0.005 || network.errorValue() == 0.0)){
             //increment train count
             trainNo++;
 
@@ -26,7 +26,7 @@ public class Main {
                 try {
                     //read the file and convert it
                     double[] inputValues = new double[144];
-                    BufferedReader br = new BufferedReader(new FileReader("/Users/matthewmartin/Documents/Documents - Matthew’s MacBook Pro/Uni/IS/IS Assignment 2 v 2/Patterns/PatternFiles/" + i + ".txt"));
+                    BufferedReader br = new BufferedReader(new FileReader("./Patterns/PatternFiles/" + i + ".txt"));
                     String line;
                     String bigLine = "";
 
@@ -81,7 +81,7 @@ public class Main {
             System.out.println("Testing image " + i);
             try {
                 double[] inputValues = new double[144];
-                BufferedReader br = new BufferedReader(new FileReader("/Users/matthewmartin/Documents/Documents - Matthew’s MacBook Pro/Uni/IS/IS Assignment 2 v 2/Patterns/PatternFiles/" + i + ".txt"));
+                BufferedReader br = new BufferedReader(new FileReader("./Patterns/PatternFiles/" + i + ".txt"));
                 String line;
                 String bigLine = "";
 
@@ -116,7 +116,7 @@ public class Main {
             System.out.println("Testing image " + i);
             try {
                 double[] inputValues = new double[144];
-                BufferedReader br = new BufferedReader(new FileReader("/Users/matthewmartin/Documents/Documents - Matthew’s MacBook Pro/Uni/IS/IS Assignment 2 v 2/Patterns/TestFiles5/" + i + ".txt"));
+                BufferedReader br = new BufferedReader(new FileReader("./Patterns/TestFiles5/" + i + ".txt"));
                 String line;
                 String bigLine = "";
 
@@ -151,7 +151,7 @@ public class Main {
             System.out.println("Testing image " + i);
             try {
                 double[] inputValues = new double[144];
-                BufferedReader br = new BufferedReader(new FileReader("/Users/matthewmartin/Documents/Documents - Matthew’s MacBook Pro/Uni/IS/IS Assignment 2 v 2/Patterns/TestFiles10/" + i + ".txt"));
+                BufferedReader br = new BufferedReader(new FileReader("./Patterns/TestFiles10/" + i + ".txt"));
                 String line;
                 String bigLine = "";
 
@@ -173,6 +173,7 @@ public class Main {
                 //forward prop the file
                 network.forwardProp();
 
+                //return the result
                 network.returnResult();
 
             } catch (IOException e) {
